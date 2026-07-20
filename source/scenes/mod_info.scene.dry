@@ -1,9 +1,10 @@
 title: Mod Info
 new-page: true
 subtitle: Last Updated 7/20/2026
-go-to: info
+go-to: mod_info_menu
 
-@info
+@mod_info_menu
+
 = Mod info
 
 This is a USPD/KPD mod set near the end of the Great War.

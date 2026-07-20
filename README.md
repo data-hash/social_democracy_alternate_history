@@ -1,4 +1,4 @@
-# Social Democracy: An Alternate History
+# Spartacist Days: An Alternate History
 
 ## Included Libraries
 
