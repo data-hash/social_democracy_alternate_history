@@ -150,6 +150,13 @@ Q.rfb_militancy = 0.5;
 Q.rfb_banned = 0;
 Q.rfb_banned_prussia = 0;
 
+// formed paramil orgs
+Q.reichsbanner_formed = 0; // formed February 1924
+Q.rfb_formed = 0; // formed July 1924
+Q.stahlhelm_formed = 0; // formed December 1918
+Q.sa_formed = 0; // formed October 1921
+Q.any_paramils_formed = 0; // if any paramils are formed, set to 1
+
 Q.interior_police_strength = 50;
 Q.interior_police_militancy = 1;
 Q.interior_police_loyalty = 0.45;
@@ -172,7 +179,7 @@ Q.nationalism = 60;
 // socialism vs capitalism
 Q.socialism = 40;
 // pro-republic vs anti-republic
-Q.pro_republic = 59;
+Q.pro_republic = 17;
 
 Q.emergency_rule = 0;
 
@@ -238,12 +245,6 @@ Q.sapd_formed = 0;
 Q.kpd_formed = 0;
 Q.uspd_formed = 0;
 Q.nsdap_formed = 0;
-
-// formed paramil orgs
-Q.reichsbanner_formed = 0; // formed February 1924
-Q.rfb_formed = 0; // formed July 1924
-Q.stahlhelm_formed = 0; // formed December 1918
-Q.sa_formed = 0; // formed October 1921
 
 // Party tooltips
 Q.spd_tooltip = "Social Democratic Party of Germany";
