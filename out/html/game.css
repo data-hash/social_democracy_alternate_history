@@ -1,3 +1,7 @@
+:root {
+  --president_party_color: #808080;
+  --chancellor_party_color: #808080;
+}
 body {
   --bg-color: #f3f3e3;
   --border-color: #000;
