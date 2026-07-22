@@ -107,7 +107,7 @@ Agriculture: [+ agriculture_minister +] ([+ agriculture_minister_party +])
 @demographics
 go-to: menu
 
-**Demographic Groups**
+= Demographic Groups
 
 **Working Class**: The urban working class - blue-collar workers in factories, workshops, mines, and the like. Most are socialist, supporting either the SPD or KPD. They make up 40-50% of the population.
 
@@ -145,7 +145,8 @@ Support for the Republic: [+ pro_republic_disp +]%
 view-if: (not historical_mode) or game_over
 go-to: menu
 
-**Projected election results** (if the election were to be held now):
+= Projected election results 
+> (if the election were to be held now):
 
 # 1928: 30, 1930: 25, 1932: 22
 {!<span style="color: var(--spd_color);"><strong>SPD</strong></span>!}: [+ spd_votes +]%
@@ -177,7 +178,7 @@ go-to: menu
 # 1928: 9, 1930: 10
 {!<span><strong>Others</strong></span>!}: [+ other_votes +]%
 
-**Detailed results for each demographic**
+ > **Detailed results for each demographic**
 
 Workers: SPD: [+ workers_spd_display +]%, Z: [+ workers_z_display +]%, KPD: [+ workers_kpd_display +]%, [+ ddp_name +]: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
@@ -194,13 +195,13 @@ Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD
 @parties
 go-to: menu
 
-[? if nov_revolution = 0 : <span style="color: var(--spd_color);">**SPD**</span> - <i>Sozialdemokratische Partei Deutschlands</i> (Social Democratic Party of Germany) - this is us. We are a socialist and democratic party of the working class. We are the heirs of the legacy of Marx and Engels, Lassalle and Bebel. The current SPD is made of the "Majority" <span style="color: var(--spd_color);">SPD</span>, which supports the Great War, and the centrists in the <span style="color: var(--spd_color);">SPD</span> who oppose the war. The <span style="color: var(--kpd_color);">Spartacist League</span> is furious with the parties' direction however doesn't want to split away, **for now.**?]
+[? if nov_revolution = 0 : <span style="color: var(--spd_color);">**SPD**</span> - <i>Sozialdemokratische Partei Deutschlands</i> (Social Democratic Party of Germany) - this is us. We are a socialist and democratic party of the working class. We are the heirs of the legacy of Marx and Engels, Lassalle and Bebel. The current SPD is made of the "Majority" <span style="color: var(--spd_color);">SPD</span>, which support the Great War, and the centrists in the <span style="color: var(--spd_color);">SPD</span> who oppose the war. The <span style="color: var(--kpd_color);">Spartacist League</span> is furious with the parties' direction however doesn't want to split away, **for now.**?]
 [? if uspd_formed = 1 : <span style="color: var(--spd_color);">**SPD**</span> - <i>Sozialdemokratische Partei Deutschlands</i> (Social Democratic Party of Germany) - They are "socialists" and supposedly a democratic party of the working class. They claim they're the heirs of the legacy of Marx and Engels, Lassalle and Bebel. The current SPD is now only made of the "Majority" <span style="color: var(--spd_color);">SPD</span>, which support the Great War, we centrists and leftists formerly in the <span style="color: var(--spd_color);">SPD</span> who left oppose the war.?]
 
 [? if uspd_formed or kpd_formed : Current relations: [+ spd_relation : relationships +]?]
 
 
-<span style="color: var(--z_color);">**Z**</span> - <i>Zentrumspartei</i> (Center Party) - a centrist to center-right Catholic party that supports the Empire, and has historically supported many of our labor, welfare, and anti-militarist priorities. They have often been in coalitions with us. They are often associated with the <span style="color: var(--bvp_color);">**BVP**</span> (Bavarian People's Party), which represents Catholics in Bavaria. [? if year >= 1930 or chancellor = "Brüning" : They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?]
+<span style="color: var(--z_color);">**Z**</span> - <i>Zentrumspartei</i> (Center Party) - a centrist to center-right Catholic party that supports the Empire, and has historically supported many of our labor, welfare, and anti-militarist priorities.[? if nov_revolution = 1 : They are often associated with the <span style="color: var(--bvp_color);">**BVP**</span> (Bavarian People's Party), which represents Catholics in Bavaria. [? if year >= 1930 or chancellor = "Brüning" : They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?]?]
 
 Current relations: [+ z_relation : relationships +]
 
@@ -212,7 +213,7 @@ Current relations: [+ z_relation : relationships +]
 Current relations: [+ ddp_relation : relationships +]
 
 
-[? if nov_revolution = 0 : <span style="color: var(--dvp_color);">**NLP**</span> - <i>Nationalliberale Partei<i> (National Liberal Party) - a conservative-liberal party, supported by the middle classes and bourgeoisie. ?]
+[? if nov_revolution = 0 : <span style="color: var(--dvp_color);">**NLP**</span> - <i>Nationalliberale Partei</i> (National Liberal Party) - a conservative-liberal party, supported by the middle classes and bourgeoisie. ?]
 [? if nov_revolution = 1 : <span style="color: var(--dvp_color);">**DVP**</span> - <i>Deutsche Volkspartei</i> (German People's Party) - a conservative-liberal party, supported by the middle classes and bourgeoisie. Before the November Revolution they were better known as the NLP.?]
 
 Current relations: [+ dvp_relation : relationships +]
@@ -246,7 +247,7 @@ Q.sa_strength = Math.round(Q.sa_strength);
 !}
 go-to: menu
 
-**Paramilitary groups:**
+= Paramilitary groups
 
 [? if reichsbanner_formed = 1 : **Reichsbanner Schwarz-Rot-Gold**: The Reichsbanner is an organization affiliated with all of the democratic parties - the SPD, Z, and DDP, but primarily with the SPD. Historically, this has been an unarmed organization.?]
 
@@ -289,14 +290,14 @@ Loyalty: [+ prussian_police_loyalty : loyalty +]
 @factions
 go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
-**Internal factions of the SPD**
+= Internal factions of the SPD
 
 Overall dissent: [+ dissent_percent : dissent +]
 
 **Left**
 
 # (WIP)
-Some leftists are members of the Spartacus League (the left-wing, anti-war communists, who believe the path to socialism requires revolution), or are disillusioned members of the <span style="color: var(--spd_color);">SPD</span> who are disappointed by the parties' conduct. Many are interested in starting a general strike, and some support revolutionary action.
+Some leftists are members of the Spartacus League (the left-wing, anti-war communists, who believe the path to socialism requires revolution), or are disillusioned members of the <span style="color: var(--spd_color);">SPD</span> who are disappointed by the parties' conduct. Many are interested in starting a general strike, and most support revolutionary action.
 
 Strength: [+ left_strength : strength +]
 
@@ -499,13 +500,13 @@ if (d3 && window) {
 
 [? if nsdap_formed : {!<tr><td><div class="box" style="background-color: var(--nsdap_color);"> </div></td><td>!} NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color: var(--other_color)'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_r +] % {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--other_color)'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_r +]% {!</td></tr>!}
 
 {!</table>!}
 
 = Election history
 
-[? if year = 1917 and month <= 11 : No new elections yet. ?]
+[? if year = 1917 and month <= 11 : No new elections yet. Elections have been postponed until the war ends. ?]
 
 {!<svg id="election_history" style="width: 500px; height: 400px;"> </svg>!}
 
