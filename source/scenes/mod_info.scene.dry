@@ -1,12 +1,12 @@
 title: Mod Info
 new-page: true
-subtitle: Last Updated 7/21/2026
+subtitle: Last Updated 7/22/2026
 go-to: mod_info_menu
 
 @mod_info_menu
 
 = Mod info
 
-This is a Spartacist/KPD mod beginning near the end of the Great War.
+This is a Spartacist League/KPD mod beginning near the end of the Great War.
 
 - @root: Back
