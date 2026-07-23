@@ -12,21 +12,16 @@ Q.economic_growth_2 = '0';
 if (Q.economic_growth) {
     Q.economic_growth_2 = Q.economic_growth.toFixed(1);
 }
-
-if (Q.kpd_formed == 0 && Q.nov_revolution == 0) {
-    document.getElementById("spGroup").style.display = "block";
-}
-if (Q.kpd_formed == 0 && Q.nov_revolution == 1) {
-    document.getElementById("spGroup").style.display = "block";
-}
-if (Q.kpd_formed == 1 && Q.nov_revolution == 1) {
-    document.getElementById("spGroup").style.display = "block";
-}
 !}
 
-[? if kpd_formed = 0 and nov_revolution = 0 : <h1 id="spGroup" style="display: none;"><span style="color: var(--kpd_color)"><strong>Spartacus Group </span></strong>Leadership</h1> ?]
-[? if kpd_formed = 0 and nov_revolution = 1 : <h1 id="spLeague" style="display: none;"><span style="color: var(--kpd_color)"><strong>Spartacus League </span></strong>Leadership</h1> ?]
-[? if kpd_formed = 1 and kpd_merge = 1 : <h1 id="kpdLeadership" style="display: none;"><span style="color: var(--kpd_color)"><strong>KPD </span></strong>Leadership</h1> ?]
+<script> if (Q.kpd_formed == 0) {<h1>TEST</h1>} </script>
+<script> if (Q.kpd_formed == 0 && nov_revolution == 1) {<h1>TEST2</h1>} </script>
+{! <script> if (Q.kpd_formed == 0) {<h1>TEST3</h1>} </script> !}
+{! <script> if (Q.kpd_formed == 0 && nov_revolution == 1) {<h1>TEST4</h1>} </script> !}
+
+[? if kpd_formed = 0 and nov_revolution = 0 : <h1><span style="color: var(--kpd_color)"><strong>Spartacus Group </span></strong>Leadership</h1> ?]
+[? if kpd_formed = 0 and nov_revolution = 1 : <h1><span style="color: var(--kpd_color)"><strong>Spartacus League </span></strong>Leadership</h1> ?]
+[? if kpd_formed = 1 and kpd_merge = 1 : <h1><span style="color: var(--kpd_color)"><strong>KPD </span></strong>Leadership</h1> ?]
 
 
 <div style="display: flex; gap: 5px; margin-top: 5px; margin-bottom: 5px; margin-left: -3px; justify-content: center;">
