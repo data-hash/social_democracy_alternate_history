@@ -2,6 +2,17 @@
 
 = Images (general):
 
+kpd_flag.svg: sourced from Wikipedia, original image by Jens Pattke, https://www.crwflags.com/fotw/flags/de%7Dkpd.html, https://commons.wikimedia.org/wiki/File:Flag_of_the_Communist_Party_of_Germany.svg, https://creativecommons.org/licenses/by-sa/3.0/deed.en
+R-41~commonswiki, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
+
+kpd_logo.svg: sourced from Wikipedia, orginal image by R-41, https://en.wikipedia.org/wiki/File:Kommunistische_Partei_Deutschlands,_Logo_um_1920.svg, https://creativecommons.org/licenses/by-sa/3.0/deed.en
+R-41, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
+
+SPD_logo_2.png: self made edit of SPD_logo.png
+
+uspd_logo.svg: sourced from Wikipedia, orginal image by Dahn, https://commons.wikimedia.org/wiki/File:USPD_logo,_1920.svg, https://creativecommons.org/licenses/by-sa/4.0/deed.en
+Dahn, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
 map.jpg, map_2.jpg: Anonymous. Meyers Blitz-Lexikon. English:  scanned by User:LA2 in September 2005, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:LA2-Blitz-0083.jpg. Accessed 3 Feb. 2024. Public Domain
 
 reichstag_2.jpg: ---. Berlin, Reichstag, Verfassungsfeier. 11 Aug. 1932. German Federal Archives, Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_102-13744,_Berlin,_Reichstag,_Verfassungsfeier.jpg. CC-BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/de/deed.en

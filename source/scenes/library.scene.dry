@@ -496,11 +496,11 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style="background-color: var(--dvp_color);"> </div></td><td>!} [+ dvp_name +]: {!</td><td>!} [+ dvp_r +]% {!</td></tr>!}
 
+{!<tr><td><div class="box" style='background-color: var(--other_color)'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_r +]% {!</td></tr>!}
+
 {!<tr><td><div class="box" style="background-color: var(--dnvp_color);"> </div></td><td>!} [+ dnvp_name +]: {!</td><td>!} [+ dnvp_r +]% {!</td></tr>!}
 
 [? if nsdap_formed : {!<tr><td><div class="box" style="background-color: var(--nsdap_color);"> </div></td><td>!} NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td></tr>!} ?]
-
-{!<tr><td><div class="box" style='background-color: var(--other_color)'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_r +]% {!</td></tr>!}
 
 {!</table>!}
 
