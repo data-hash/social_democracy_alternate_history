@@ -92,6 +92,26 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
+= Party Leadership
+
+<span class="tooltip-text" data-tooltip="Social Democratic Party of Germany" style="color: var(--spd_color);"><strong>SPD</strong></span>: [+ spd_ideology +] ([+ spd_leader +])
+
+[? if nov_revolution = 0 : <span class="tooltip-text" data-tooltip="Progressive People's Party" style="color: var(--ddp_color);"><strong>FVp</strong></span>: [+ ddp_ideology +] ([+ ddp_leader +]) ?]
+[? if nov_revolution = 1 : <span class="tooltip-text" data-tooltip="German Democratic Party" style="color: var(--ddp_color);"><strong>[+ ddp_name +]</strong></span>: [+ ddp_ideology +] ([+ ddp_leader +]) ?]
+
+[? if nov_revolution = 0 : <span class="tooltip-text" data-tooltip="National Liberal Party" style="color: var(--dvp_color);"><strong>NLP</strong></span>: [+ dvp_ideology +] ([+ dvp_leader +]) ?]
+[? if nov_revolution = 1 : <span class="tooltip-text" data-tooltip="German People's Party" style="color: var(--dvp_color);"><strong>[+ dvp_name +]</strong></span>: [+ dvp_ideology +] ([+ dvp_leader +]) ?]
+
+{!<span class="tooltip-text" data-tooltip="German Centre Party" style="color: var(--z_color);"><strong>Z</strong></span>!}: [+ spd_ideology +] ([+ spd_leader +])
+
+[? if nov_revolution = 1 : {!<span class="tooltip-text" data-tooltip="Bavarian People's Party" style="color: var(--bvp_color);"><strong>BVP</strong></span>!}: [+ bvp_ideology +] ([+ bvp_leader +]) ?]
+
+[? if nov_revolution = 0 : <span class="tooltip-text" data-tooltip="German Conservative Party" style="color: var(--dnvp_color);"><strong>DKP</strong></span>: [+ dnvp_ideology +] ([+ dnvp_leader +]) ?]
+[? if nov_revolution = 1 : <span class="tooltip-text" data-tooltip="German National People's Party" style="color: var(--dnvp_color);"><strong>[+ dnvp_name +]</strong></span>: [+ dnvp_ideology +] ([+ dnvp_leader +]) ?]
+
+[? if nsdap_formed: <span class="tooltip-text" data-tooltip="National-Socialist German Worker's Party (Nazis)" style="color: var(--nsdap_color);"><strong>NSDAP</strong></span>: [+ spd_ideology +] ([+ spd_leader +]) ?]
+
+
 
 @paramilitaries
 on-arrival: {!
@@ -197,7 +217,7 @@ Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD
 
 = Government
 
----
+<hr>
 
 [? if nov_revolution = 0: Emperor: <span style="color: var(--president_party_color);">Wilhelm II</span> (<span style="color:#808080"><strong>I</strong></span>) ?]
 [? if nov_revolution = 1: President: <span style="color: var(--president_party_color);">[+ president +]</span> (<span style="color: var(--president_party_color)"><strong>[+ president_party +]</strong>) ?] 
