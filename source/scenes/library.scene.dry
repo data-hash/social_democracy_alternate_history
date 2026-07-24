@@ -389,7 +389,7 @@ if (Q.nov_revolution) {
         "id": "bvp",
         "legend": "BVP",
         "name": "BVP",
-        "seats": 3*5,
+        "seats": Q.bvp_r*5,
     })
 }
 data = data.concat([
@@ -403,7 +403,7 @@ data = data.concat([
         "id": "z",
         "legend": "Center",
         "name": "Center",
-        "seats": (Q.z_r - 3)*5,
+        "seats": Q.z_r*5,
     },
     {
         "id": "dvp",
