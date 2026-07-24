@@ -230,24 +230,24 @@ Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD
 <div style="text-align: center;"><strong>[+ chancellor +]</strong> (<span style="color: var(--chancellor_party_color)"><strong>[+ chancellor_party +]</span></strong>)</div>
 <div style="text-align: center; color: var(--unavailable-color); font-size: 0.8em;"><em>Chancellor</em></div>
 
-Vice-chancellor: <br>[+ vice_chancellor +] (<span style="color: var(--vice_chancellor_party_color)"><strong>[+ vice_chancellor_party +]</span></strong>)
+<div style="text-align: center;">Vice-chancellor: <br>[+ vice_chancellor +] (<span style="color: var(--vice_chancellor_party_color)"><strong>[+ vice_chancellor_party +]</span></strong>)</div>
 
-Minister of Labor: [+ labor_minister +] (<span style="color: var(--labor_minister_party_color)"><strong>[+ labor_minister_party +]</strong></span>)
+<div style="text-align: center;">Minister of Labor: <br>[+ labor_minister +] (<span style="color: var(--labor_minister_party_color)"><strong>[+ labor_minister_party +]</strong></span>)</div>
 
-Minister of the Interior: [+ interior_minister +] (<span style="color: var(--interior_minister_party_color)"><strong>[+ interior_minister_party +]</strong></span>)
+<div style="text-align: center;">Minister of the Interior: <br>[+ interior_minister +] (<span style="color: var(--interior_minister_party_color)"><strong>[+ interior_minister_party +]</strong></span>)</div>
 
-Minister of Finance: [+ finance_minister +] (<span style="color: var(--finance_minister_party_color)"><strong>[+ finance_minister_party +]</strong></span>)
+<div style="text-align: center;">Minister of Finance: <br>[+ finance_minister +] (<span style="color: var(--finance_minister_party_color)"><strong>[+ finance_minister_party +]</strong></span>)</div>
 
-[? if month = 10 and year = 1919 : Minister of Economic: [+ economic_minister +] (<span style="color: var(--economic_minister_party_color)"><strong>[+ economic_minister_party +]</strong></span>) ?]
+[? if month = 10 and year = 1919 : <div style="text-align: center;">Minister of Economic: <br>[+ economic_minister +] (<span style="color: var(--economic_minister_party_color)"><strong>[+ economic_minister_party +]</strong></span>)</div> ?]
 
-Minister of Justice: [+ justice_minister +] (<span style="color: var(--justice_minister_party_color)"><strong>[+ justice_minister_party +]</strong></span>)
+<div style="text-align: center;">Minister of Justice: <br>[+ justice_minister +] (<span style="color: var(--justice_minister_party_color)"><strong>[+ justice_minister_party +]</strong></span>)</div>
 
-Minister of Foreign Affairs: [+ foreign_minister +] (<span style="color: var(--foreign_minister_party_color)"><strong>[+ foreign_minister_party +]</strong></span>)
+<div style="text-align: center;">Minister of Foreign Affairs: <br>[+ foreign_minister +] (<span style="color: var(--foreign_minister_party_color)"><strong>[+ foreign_minister_party +]</strong></span>)</div>
 
-[? if nov_revolution = 0 : Minister of War: [+ reichswehr_minister +] (<span style="color: var(--reichswehr_minister_party_color)"><strong>[+ reichswehr_minister_party +]</strong></span>)?]
-[? if nov_revolution = 1 : Minister of Reichswehr: [+ reichswehr_minister +] (<span style="color: var(--reichswehr_minister_party_color)"><strong>[+ reichswehr_minister_party +]</strong></span>) ?]
+[? if nov_revolution = 0 : Minister of War: <br>[+ reichswehr_minister +] (<span style="color: var(--reichswehr_minister_party_color)"><strong>[+ reichswehr_minister_party +]</strong></span>)</div> ?]
+[? if nov_revolution = 1 : Minister of Reichswehr: <br>[+ reichswehr_minister +] (<span style="color: var(--reichswehr_minister_party_color)"><strong>[+ reichswehr_minister_party +]</strong></span>)</div> ?]
 
-Minister of Agriculture: [+ agriculture_minister +] (<span style="color: var(--agriculture_minister_party_color)"><strong>[+ agriculture_minister_party +]</strong></span>)
+<div style="text-align: center;">Minister of Agriculture: <br>[+ agriculture_minister +] (<span style="color: var(--agriculture_minister_party_color)"><strong>[+ agriculture_minister_party +]</strong></span>)</div>
 
 @parliament
 
