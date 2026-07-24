@@ -99,7 +99,7 @@ Justice: [+ justice_minister +] ([+ justice_minister_party +])
 
 Foreign: [+ foreign_minister +] ([+ foreign_minister_party +])
 
-Reichswehr: [+ reichswehr_minister +] ([+ reichswehr_minister_party +])
+[? if nov_revolution = 1 : Reichswehr: [+ reichswehr_minister +] ([+ reichswehr_minister_party +]) ?]
 
 Agriculture: [+ agriculture_minister +] ([+ agriculture_minister_party +])
 

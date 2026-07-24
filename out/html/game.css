@@ -1,6 +1,17 @@
 :root {
   --president_party_color: #808080;
   --chancellor_party_color: #808080;
+  --chancellor_party_color: #808080;
+
+  --foreign_minister_party_color: #808080;
+  --interior_minister_party_color: #808080;
+  --justice_minister_party_color: #808080;
+  --labor_minister_party_color: #808080;
+  --reichswehr_minister_party_color: #808080;
+  --economic_minister_party_color: #808080;
+  --finance_minister_party_color: #808080;
+  --agriculture_minister_party_color: #808080;
+
   --spd_color: #E3000F;
   --uspd_color: #b90903;
   --sapd_color: #C40000;
@@ -253,9 +264,6 @@ blockquote + blockquote.attribution {
 }
 .tab_button.active {
     background-color: var(--content-bg-color);
-    border-style: inset;
-    border-width: 2px;
-    border-color: var(--unavailable-color);
 }
 .tab_button:hover {
     background-color: var(--tab-hover-color);

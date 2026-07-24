@@ -215,16 +215,43 @@ Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD
 
 @government
 
-= Government
+[? if president == "Wilhelm II" : <h1><span style="color: #000000">Imperial </span>Government</h1>?]
 
 <hr>
 
-[? if nov_revolution = 0: Emperor: <span style="color: var(--president_party_color);">Wilhelm II</span> (<span style="color:#808080"><strong>I</strong></span>) ?]
-[? if nov_revolution = 1: President: <span style="color: var(--president_party_color);">[+ president +]</span> (<span style="color: var(--president_party_color)"><strong>[+ president_party +]</strong>) ?] 
+[? if president == "Wilhelm II" : <div><img src="img/portraits/Wilhelm_II_portrait.jpg" alt="Wilhelm II" style="width: 50%; display: block; margin-top: 5px; margin: auto; margin-bottom: 5px; border: 5px solid var(--card-border-color);"></div> ?]
+<div style="text-align: center;"><strong>[+ president +]<strong> (<span style="color: var(--president_party_color)"><strong>[+ president_party +]</strong></span>)</div>
+[? if president == "Wilhelm II" : <div style="text-align: center; color: var(--unavailable-color); font-size: 0.8em;"><em>Emperor</em></div>?]
+[? if president !== "Wilhelm II" : <div style="text-align: center; color: var(--unavailable-color); font-size: 0.8em;"><em>President</em></div>?]
 
-Chancellor: <span style="color: var(--chancellor_party_color);">[+ chancellor +]</span> (<span style="color: var(--chancellor_party_color);"><strong>[+ chancellor_party +]</strong></span>)
+= Cabinet
 
-Reichstag composition:
+[? if chancellor == "Hollweg" : <div><img src="img/portraits/Bethmann_Hollweg_portrait.jpg" alt="Theobald von Bethmann Hollweg" style="width: 50%; display: block; margin-top: 5px; margin: auto; margin-bottom: 5px; border: 5px solid var(--card-border-color);"></div> ?]
+<div style="text-align: center;"><strong>[+ chancellor +]<strong> (<span style="color: var(--chancellor_party_color)"><strong>[+ chancellor_party +]</span></strong>)</div>
+<div style="text-align: center; color: var(--unavailable-color); font-size: 0.8em;"><em>Chancellor</em></div>
+
+Vice-chancellor: <br>[+ vice_chancellor +] (<span style="color: var(--vice_chancellor_party_color)"><strong>[+ vice_chancellor_party +]</span></strong>)
+
+Minister of Labor: [+ labor_minister +] (<span style="color: var(--labor_minister_party_color)"><strong>[+ labor_minister_party +]</strong></span>)
+
+Minister of the Interior: [+ interior_minister +] (<span style="color: var(--interior_minister_party_color)"><strong>[+ interior_minister_party +]</strong></span>)
+
+Minister of Finance: [+ finance_minister +] (<span style="color: var(--finance_minister_party_color)"><strong>[+ finance_minister_party +]</strong></span>)
+
+[? if month = 10 and year = 1919 : Minister of Economic: [+ economic_minister +] (<span style="color: var(--economic_minister_party_color)"><strong>[+ economic_minister_party +]</strong></span>) ?]
+
+Minister of Justice: [+ justice_minister +] (<span style="color: var(--justice_minister_party_color)"><strong>[+ justice_minister_party +]</strong></span>)
+
+Minister of Foreign Affairs: [+ foreign_minister +] (<span style="color: var(--foreign_minister_party_color)"><strong>[+ foreign_minister_party +]</strong></span>)
+
+[? if nov_revolution = 0 : Minister of War: [+ reichswehr_minister +] (<span style="color: var(--reichswehr_minister_party_color)"><strong>[+ reichswehr_minister_party +]</strong></span>)?]
+[? if nov_revolution = 1 : Minister of Reichswehr: [+ reichswehr_minister +] (<span style="color: var(--reichswehr_minister_party_color)"><strong>[+ reichswehr_minister_party +]</strong></span>) ?]
+
+Minister of Agriculture: [+ agriculture_minister +] (<span style="color: var(--agriculture_minister_party_color)"><strong>[+ agriculture_minister_party +]</strong></span>)
+
+@parliament
+
+= Reichstag composition
 
 # 1928: 30, 1930: 25, 1932: 22
 <span class="tooltip-text" data-tooltip="Social Democratic Party of Germany" style="color: var(--spd_color);"><strong>SPD</strong></span>: [+ spd_r +]%
@@ -251,5 +278,3 @@ Reichstag composition:
 [? if spd_in_government = 1 : Budget: [+ budget +] ?]
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
-
-@parliament
