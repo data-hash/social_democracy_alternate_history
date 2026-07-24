@@ -127,7 +127,7 @@ Q.ddp_leader = "Fischbeck";
 Q.ddp_ideology = "Social Liberalism";
 Q.kpd_leader = "Liebknecht & Luxemburg";
 Q.kpd_party_leader = "Thälmann";
-Q.kpd_ideology = "Communism"
+Q.kpd_ideology = "Communism";
 // alternative is the Conciliators as party leader
 Q.z_leader = "Hertling";
 Q.z_ideology = "Christian Democracy";
