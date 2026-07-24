@@ -36,6 +36,8 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
+[? if kpd_in_government = 1 : Budget: [+ budget +] ?]
+
 Grassroots support: [+ grassroots_support : support +]
 
 Union backing: [+ union_support : support +]
@@ -290,14 +292,16 @@ on-display: {!
     }
 !}
 
-= Reichstag
+<h1><strong>Reichstag</strong></h1>
+
+<hr>
 
 [? if president_reichstag == "Johannes Kaempf" : <div><img src="img/portraits/Johannes_Kaempf.jpg" alt="Johannes Kaempf" style="width: 50%;display: block;margin: auto;margin-top: 5px;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?]
-<div style="text-align: center;">**[+ president_reichstag +]** (<span style="color: var(--president_reichstag_color)"><strong>[+ president_reichstag_party +]</strong></span>)
+<div style="text-align: center;">**[+ president_reichstag +]** (<span style="color: var(--president_reichstag_color)"><strong>[+ president_reichstag_party +]</strong></span>)</div>
 [? if nov_revolution = 0 and interim_government = 0 : <div style="text-align: center; color: var(--unavailable-color); font-size: 0.8em;"><em>President of the Reichstag</em></div> ?]
 [? if nov_revolution = 1 and interim_government = 1 : <div style="text-align: center; color: var(--unavailable-color); font-size: 0.8em;"><em>President of the Weimar National Assembly</em></div> ?]
 
-<div style="display: flex; width: 100%;">{!<svg id="reichstag_st" style="flex: 1;"> </svg>!}</div>
+<div style="margin: auto;">{!<svg id="reichstag_st" style="width: 550px; height: 275px;"> </svg>!}</div>
 
 {!<table>!}
 {!<tr><td>Party</td><td>Seats</td><td>Status</td></tr>!}
@@ -329,4 +333,4 @@ on-display: {!
 
 [? if spd_in_government = 1 : Budget: [+ budget +] ?]
 
-Next election: [+ next_election_month : month +] [+ next_election_year +]
+<span style="text-align: center;">Next election: [+ next_election_month : month +] [+ next_election_year +]</span>
