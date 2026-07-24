@@ -222,7 +222,7 @@ Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD
 [? if president == "Wilhelm II" : <div><img src="img/portraits/Wilhelm_II_portrait.jpg" alt="Wilhelm II" style="width: 50%; display: block; margin-top: 5px; margin: auto; margin-bottom: 5px; border: 5px solid var(--card-border-color);"></div> ?]
 <div style="text-align: center;"><strong>[+ president +]<strong> (<span style="color: var(--president_party_color)"><strong>[+ president_party +]</strong></span>)</div>
 [? if president == "Wilhelm II" : <div style="text-align: center; color: var(--unavailable-color); font-size: 0.8em;"><em>Emperor</em></div>?]
-[? if president !== "Wilhelm II" : <div style="text-align: center; color: var(--unavailable-color); font-size: 0.8em;"><em>President</em></div>?]
+[? if nov_revolution = 1 : <div style="text-align: center; color: var(--unavailable-color); font-size: 0.8em;"><em>President</em></div>?]
 
 = Cabinet
 
