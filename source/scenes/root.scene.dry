@@ -349,6 +349,7 @@ Q.catholics_other = 12;
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
 Q.spd_r = 34;
+Q.uspd_r = 0;
 Q.kpd_r = 0;
 Q.z_r = 16;
 Q.bvp_r = 0;
@@ -376,8 +377,10 @@ Q.chancellor_party_color = "#808080";
 
 // diff from prev
 Q.old_spd_r = 34;
+Q.old_uspd_r = 0;
 Q.old_kpd_r = 0;
 Q.old_z_r = 16;
+Q.old_bvp_r = 0;
 Q.old_ddp_r = 12;
 Q.old_dvp_r = 14;
 Q.old_dnvp_r = 8;
